@@ -22,6 +22,10 @@ namespace IWE.Entity.Concrete.EntityFramework.Configurations
             builder.Property(p => p.Id).UseIdentityColumn();
             builder.Property(p => p.TaskName).IsRequired();
             builder.Property(p => p.Note).IsRequired();
+            
+            builder.HasOne<User>(t => t.User).WithMany(u => u.Tasks).HasForeignKey(t => t.UserId);
+            builder.HasOne<Project>(t => t.Project).WithMany(u => u.Tasks).HasForeignKey(t => t.ProjectId);
+            
             builder.ToTable("Tasks");
         }
     }

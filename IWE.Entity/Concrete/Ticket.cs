@@ -11,5 +11,6 @@ namespace IWE.Entity.Concrete
         public string TicketName { get; set; } = string.Empty;
 
         public int UserId { get; set; }
+        public User User { get; set; }
     }
 }

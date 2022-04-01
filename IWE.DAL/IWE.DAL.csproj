@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IWE.Entity\IWE.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

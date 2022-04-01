@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IWE.Entity.Abstract;
 
 namespace IWE.Entity.Concrete
 {
-    public class Base
+    public abstract class Base : IBase
     {
         public int Id { get; set; }
         public DateTime CreatedAt { get; set; }

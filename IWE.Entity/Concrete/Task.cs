@@ -11,6 +11,8 @@ namespace IWE.Entity.Concrete
         public string TaskName { get; set; } = string.Empty;
 
         public int ProjectId { get; set; }
+        public Project Project { get; set; }
         public int UserId { get; set; }
+        public User User { get; set; }
     }
 }

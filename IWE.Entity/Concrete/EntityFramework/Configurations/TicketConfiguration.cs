@@ -21,6 +21,9 @@ namespace IWE.Entity.Concrete.EntityFramework.Configurations
             builder.HasKey(p => p.Id);
             builder.Property(p => p.Id).UseIdentityColumn();
             builder.Property(p => p.TicketName).IsRequired();
+
+            builder.HasOne<User>(t => t.User).WithMany(u => u.Tickets).HasForeignKey(t => t.UserId);
+            
             builder.ToTable("Tickets");
         }
     }
