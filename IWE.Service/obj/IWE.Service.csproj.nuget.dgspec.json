@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Service\\IWE.Service.csproj": {}
+    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Service\\IWE.Service.csproj": {
+    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Service\\IWE.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
         "projectName": "IWE.Service",
-        "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Service\\IWE.Service.csproj",
+        "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
         "packagesPath": "C:\\Users\\Aksamci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Service\\obj\\",
+        "outputPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

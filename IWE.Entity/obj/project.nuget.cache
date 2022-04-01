@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oEDNVCtQgEiI8F0iNVWL9j3oz49o7uK984ssP8VT5E7gR7+8kxCdHCtx6mOwnFURKKlyAdXlDGrxUFUnOXjIbw==",
+  "dgSpecHash": "8fptqJuqF+VoNA32ADanKwMrZNx/fPppTl42//7ks2jv9MQNrTlU0/faOozL3d5zcXof9p8Gpdm6SRh99YOZKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Entity\\IWE.Entity.csproj",
+  "projectFilePath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Aksamci\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
+    "C:\\Users\\Aksamci\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.4.0\\fluentvalidation.aspnetcore.10.4.0.nupkg.sha512",
+    "C:\\Users\\Aksamci\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.4.0\\fluentvalidation.dependencyinjectionextensions.10.4.0.nupkg.sha512",
     "C:\\Users\\Aksamci\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Aksamci\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Aksamci\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

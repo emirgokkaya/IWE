@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Core\\IWE.Core.csproj": {}
+    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Core\\IWE.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Core\\IWE.Core.csproj": {
+    "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Core\\IWE.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Core\\IWE.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Core\\IWE.Core.csproj",
         "projectName": "IWE.Core",
-        "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Core\\IWE.Core.csproj",
+        "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Core\\IWE.Core.csproj",
         "packagesPath": "C:\\Users\\Aksamci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Core\\obj\\",
+        "outputPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+FDHMJst/Tktdx6yxMWPPX8O2L6+hxayi96U94CacjpP51i7F+BqT6hrSrAaH4k8QWUYYSNmk7WjR6zkFkzL8w==",
+  "dgSpecHash": "qJhkyi5aJObdvGERoGGRSzmJXo/ndHlukRvd0+WJMbk6UyY1izF8aziRBiiPb1isXnqgeyCeGzLSRtP5+pGqxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE\\IWE.Core\\IWE.Core.csproj",
+  "projectFilePath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Core\\IWE.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aksamci\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Aksamci\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
