@@ -21,7 +21,9 @@ namespace IWE.Entity.Concrete
         public byte[]? PasswordSalt { get; set; }
         public byte[]? PasswordHash { get; set; }
         public int RoleId { get; set; }
+        public Role Role { get; set; }
         public int DepartmentId { get; set; }
+        public Department Department { get; set; }
         public ICollection<Project> Projects { get; set; }
         public ICollection<Task> Tasks { get; set; }
         public ICollection<Ticket> Tickets { get; set; }

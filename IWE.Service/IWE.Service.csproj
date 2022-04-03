@@ -20,4 +20,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IWE.DAL\IWE.DAL.csproj" />
+    <ProjectReference Include="..\IWE.UnitOfWork\IWE.UnitOfWork.csproj" />
+  </ItemGroup>
+
 </Project>

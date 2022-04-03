@@ -1,0 +1,14 @@
+C:\Users\emirg\Desktop\IWE\IWE.DTO\bin\Debug\net6.0\IWE.DTO.deps.json
+C:\Users\emirg\Desktop\IWE\IWE.DTO\bin\Debug\net6.0\IWE.DTO.runtimeconfig.json
+C:\Users\emirg\Desktop\IWE\IWE.DTO\bin\Debug\net6.0\IWE.DTO.dll
+C:\Users\emirg\Desktop\IWE\IWE.DTO\bin\Debug\net6.0\ref\IWE.DTO.dll
+C:\Users\emirg\Desktop\IWE\IWE.DTO\bin\Debug\net6.0\IWE.DTO.pdb
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.csproj.AssemblyReference.cache
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.AssemblyInfoInputs.cache
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.AssemblyInfo.cs
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.csproj.CoreCompileInputs.cache
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.dll
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\ref\IWE.DTO.dll
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.pdb
+C:\Users\emirg\Desktop\IWE\IWE.DTO\obj\Debug\net6.0\IWE.DTO.genruntimeconfig.cache
