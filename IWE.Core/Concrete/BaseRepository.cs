@@ -1,4 +1,5 @@
-﻿using IWE.Core.Abstract;
+﻿using System.Linq.Expressions;
+using IWE.Core.Abstract;
 using IWE.DAL.Contexts;
 using IWE.Entity.Abstract;
 using Microsoft.EntityFrameworkCore;
@@ -58,6 +59,20 @@ public class BaseRepository<T> : IBaseRepository<T> where T : class, IBase, new(
         return Set().Find(id);
     }
 
+    public T Get(Expression<Func<T, bool>> predicate)
+    {
+        IQueryable<T> query = Set();
+        query = query.Where(predicate);
+        try
+        {
+            return query.First();
+        }
+        catch
+        {
+            return new T();
+        }
+    }
+
     public List<T> List()
     {
         return Set().ToList();
@@ -68,7 +83,7 @@ public class BaseRepository<T> : IBaseRepository<T> where T : class, IBase, new(
         return _context.Set<T>();
     }
 
-    public IQueryable<T> Select()
+    public IQueryable<T> Get()
     {
         throw new NotImplementedException();
     }

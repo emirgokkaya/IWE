@@ -1,10 +1,12 @@
-﻿using IWE.Entity.Concrete;
+﻿using System.Security.Claims;
 using IWE.UnitOfWork.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IWE.Service.Controllers;
 
 [Route("api/[controller]/[action]")]
+[Authorize(Roles = "2")]
 [ApiController]
 public class HomeController : Controller
 {
@@ -19,6 +21,7 @@ public class HomeController : Controller
     [HttpGet(Name = "List")]
     public object List()
     {
+        Console.WriteLine(User);
         return _unitOfWork._roleRepository.List();
     }
 }
