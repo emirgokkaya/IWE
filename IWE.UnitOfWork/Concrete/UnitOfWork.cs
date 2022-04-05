@@ -14,8 +14,9 @@ public class UnitOfWork : IUnitOfWork
     public ITicketRepository _ticketRepository { get; }
     public IProjectRepository _projectRepository { get; }
     public ITaskRepository _taskRepository { get; }
+    public IAuthRepository _authRepository { get; }
 
-    public UnitOfWork(IWEContext context, IUserRepository userRepository, IRoleRepository roleRepository, IDepartmentRepository departmentRepository, ICategoryRepository categoryRepository, ITicketRepository ticketRepository, IProjectRepository projectRepository, ITaskRepository taskRepository)
+    public UnitOfWork(IWEContext context, IUserRepository userRepository, IRoleRepository roleRepository, IDepartmentRepository departmentRepository, ICategoryRepository categoryRepository, ITicketRepository ticketRepository, IProjectRepository projectRepository, ITaskRepository taskRepository, IAuthRepository authRepository)
     {
         _context = context;
         _userRepository = userRepository;
@@ -25,6 +26,7 @@ public class UnitOfWork : IUnitOfWork
         _ticketRepository = ticketRepository;
         _projectRepository = projectRepository;
         _taskRepository = taskRepository;
+        _authRepository = authRepository;
     }
     
     public void Save()

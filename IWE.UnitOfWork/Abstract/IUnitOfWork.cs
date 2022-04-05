@@ -4,6 +4,7 @@ namespace IWE.UnitOfWork.Abstract;
 
 public interface IUnitOfWork
 {
+    IAuthRepository _authRepository { get; }
     IUserRepository _userRepository { get; }
     IRoleRepository _roleRepository { get; }
     IDepartmentRepository _departmentRepository { get; }
