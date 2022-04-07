@@ -487,6 +487,15 @@
           "IWE.DAL.dll": {}
         }
       },
+      "IWE.DTO/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3"
+        },
+        "runtime": {
+          "IWE.DTO.dll": {}
+        }
+      },
       "IWE.Entity/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "10.4.0",
@@ -500,6 +509,7 @@
       "IWE.Repository/1.0.0": {
         "dependencies": {
           "IWE.Core": "1.0.0",
+          "IWE.DTO": "1.0.0",
           "IWE.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3"
@@ -844,6 +854,11 @@
       "sha512": ""
     },
     "IWE.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IWE.DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

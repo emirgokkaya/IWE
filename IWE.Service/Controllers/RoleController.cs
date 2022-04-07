@@ -15,26 +15,69 @@ namespace IWE.Service.Controllers
         {
             _uow = uow;
         }
+        
         [HttpGet("List")]
         public IActionResult List()
         {
             return Ok(_uow._roleRepository.List());
         }
-        [HttpGet( "{id}")]
+        
+        [HttpGet( "{id:int}")]
         public IActionResult FindRole(int id)
         {
-            return Ok(_uow._roleRepository.Find(id));
+            Role role = _uow._roleRepository.Find(id);
+            if (role != null)
+            {
+                return Ok(role);
+            }
+            return NotFound();
         }
-        [HttpPost("{id}")]
-        public IActionResult AddRole(RoleDto model)
+        
+        [HttpPost]
+        public IActionResult AddRole([FromBody] RoleDto model)
         {
-            return Ok(_uow._roleRepository.Create(new Role
+            _uow._roleRepository.Create(new Role
             {
                 RoleName = model.RoleName,
-                CreatedAt= DateTime.Now,
-                
-                
-            }));
+                CreatedAt = DateTime.Now,
+                Status = true,
+                IsDeleted = false,
+                UpdatedAt = DateTime.Now,
+                WhoCreated = "iwe",
+                WhoUpdated = "iwe",
+                Note = "Add new role",
+            });
+            _uow.Save();
+            return Ok(model);
+        }
+
+        [HttpPut()]
+        [Route("{id:int}")]
+        public IActionResult UpdateRole(int id, [FromBody] RoleDto model)
+        {
+            Role role = _uow._roleRepository.Find(id);
+            if (role != null)
+            {
+                role.RoleName = model.RoleName;
+                _uow._roleRepository.Update(role);
+                _uow.Save();
+                return Ok(role);
+            }
+            return NotFound();
+        }
+
+        [HttpDelete]
+        [Route("{id:int}")]
+        public IActionResult DeleteRole(int id)
+        {
+            Role role = _uow._roleRepository.Find(id);
+            if (role != null)
+            {
+                _uow._roleRepository.Delete(role);
+                _uow.Save();
+                return Ok(role);
+            }
+            return NotFound();
         }
     }
 }

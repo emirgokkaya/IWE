@@ -2445,6 +2445,7 @@
       "IWE.Repository/1.0.0": {
         "dependencies": {
           "IWE.Core": "1.0.0",
+          "IWE.DTO": "1.0.0",
           "IWE.Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3"

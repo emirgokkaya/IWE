@@ -40,3 +40,5 @@ C:\Users\hasan\Desktop\proje\IWE\IWE.Repository\obj\Debug\net6.0\refint\IWE.Repo
 C:\Users\hasan\Desktop\proje\IWE\IWE.Repository\obj\Debug\net6.0\IWE.Repository.pdb
 C:\Users\hasan\Desktop\proje\IWE\IWE.Repository\obj\Debug\net6.0\IWE.Repository.genruntimeconfig.cache
 C:\Users\hasan\Desktop\proje\IWE\IWE.Repository\obj\Debug\net6.0\ref\IWE.Repository.dll
+C:\Users\emirg\Desktop\IWE\IWE.Repository\bin\Debug\net6.0\IWE.DTO.dll
+C:\Users\emirg\Desktop\IWE\IWE.Repository\bin\Debug\net6.0\IWE.DTO.pdb

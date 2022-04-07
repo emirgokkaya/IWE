@@ -9,6 +9,5 @@ namespace IWE.DTO.Concrete
     public class DepartmentDto
     {
         public string DepartmentName { get; set; }
-        public string DepartmentCategory { get; set; }
     }
 }

@@ -20,6 +20,7 @@ namespace IWE.Entity.Concrete.EntityFramework.Configurations
             builder.HasKey(p => p.Id);
             builder.Property(p => p.Id).UseIdentityColumn();
             builder.Property(p => p.RoleName).IsRequired();
+            builder.HasIndex(p => p.RoleName).IsUnique();
             builder.ToTable("Roles");
         }
     }
