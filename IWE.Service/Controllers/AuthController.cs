@@ -45,7 +45,7 @@ namespace IWE.Service.Controllers
             _user.FirstName = request.FirstName;
             _user.LastName = request.LastName;
             _user.Email = request.Email;
-            _user.DepartmentId = 2;
+            _user.DepartmentId = 1;
             _user.RoleId = 1;
             _unitOfWork._authRepository.Register(_user, request.Password);
             return Ok(_user);

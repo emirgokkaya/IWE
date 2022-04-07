@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace IWE.Service.Controllers;
 
 [Route("api/[controller]/[action]")]
-[Authorize(Roles = "2")]
+[Authorize(Roles = "1")]
 [ApiController]
 public class HomeController : Controller
 {

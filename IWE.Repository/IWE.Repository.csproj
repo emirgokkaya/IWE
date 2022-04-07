@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IWE.Core\IWE.Core.csproj" />
+    <ProjectReference Include="..\IWE.DTO\IWE.DTO.csproj" />
     <ProjectReference Include="..\IWE.Entity\IWE.Entity.csproj" />
   </ItemGroup>
 

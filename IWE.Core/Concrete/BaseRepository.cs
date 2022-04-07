@@ -59,19 +59,7 @@ public class BaseRepository<T> : IBaseRepository<T> where T : class, IBase, new(
         return Set().Find(id);
     }
 
-    public T Get(Expression<Func<T, bool>> predicate)
-    {
-        IQueryable<T> query = Set();
-        query = query.Where(predicate);
-        try
-        {
-            return query.First();
-        }
-        catch
-        {
-            return new T();
-        }
-    }
+
 
     public List<T> List()
     {
@@ -85,6 +73,6 @@ public class BaseRepository<T> : IBaseRepository<T> where T : class, IBase, new(
 
     public IQueryable<T> Get()
     {
-        throw new NotImplementedException();
+        return Set().ToList().AsQueryable();
     }
 }

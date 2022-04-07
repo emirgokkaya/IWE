@@ -1956,24 +1956,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emirg\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hasan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\hasan\\Desktop\\proje\\IWE\\IWE.Entity\\IWE.Entity.csproj",
       "projectName": "IWE.Entity",
-      "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj",
-      "packagesPath": "C:\\Users\\emirg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\obj\\",
+      "projectPath": "C:\\Users\\hasan\\Desktop\\proje\\IWE\\IWE.Entity\\IWE.Entity.csproj",
+      "packagesPath": "C:\\Users\\hasan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hasan\\Desktop\\proje\\IWE\\IWE.Entity\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\emirg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2029,14 +2024,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
