@@ -186,7 +186,7 @@ namespace IWE.DAL.Migrations
 
                     b.Property<string>("RoleName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
@@ -203,6 +203,9 @@ namespace IWE.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoleName")
+                        .IsUnique();
 
                     b.ToTable("Roles", (string)null);
                 });
@@ -347,13 +350,6 @@ namespace IWE.DAL.Migrations
                     b.Property<byte[]>("PasswordSalt")
                         .IsRequired()
                         .HasColumnType("varbinary(max)");
-
-                    b.Property<string>("RefreshToken")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("RefreshTokenEndDate")
-                        .HasColumnType("datetime2");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("int");

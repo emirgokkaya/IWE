@@ -17,7 +17,6 @@ namespace IWE.Entity.Concrete
 
         public string ProjectName { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-
         public ICollection<User> Users { get; set; }
         public ICollection<Task> Tasks { get; set; }
         public ICollection<Category> Categories { get; set; }

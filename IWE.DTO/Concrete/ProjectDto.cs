@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IWE.Entity.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +9,14 @@ namespace IWE.DTO.Concrete
 {
     public class ProjectDto
     {
-        public string ProjectName { get; set; }
-        public string ProjectCatergory { get; set; }
-        public string ProjectBondedTasks { get; set; }
-        public string ProjectCreator { get; set; }
-        public string ProjectDevelopers { get; set; }
-        public DateTime ProjectCreationTime { get; set; }
-        public DateOnly ProjectDeliveryDate { get; set; }
-        public bool ProjectStatus { get; set; }
+        public Project project { get; set; }
+        public string ProjectName { get; set; } = string.Empty;
+        public dynamic ProjectCategoryName { get; set; } = string.Empty;    
+        public dynamic ProjectOwnerName { get; set; }
+        public dynamic ProjectCompanyName { get; set; }
+        public dynamic ProjectDeveloperName { get; set; }
+      
+
+
     }
 }

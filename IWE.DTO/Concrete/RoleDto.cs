@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace IWE.DTO.Concrete
 {
     public class RoleDto
     {
+        
+        public int Id { get; set; }
         public string RoleName { get; set; }
     }
 }

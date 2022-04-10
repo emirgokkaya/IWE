@@ -15,14 +15,14 @@ namespace IWE.Service.Controllers
         {
             _uow = uow;
         }
-        
+
         [HttpGet("List")]
         public IActionResult List()
         {
             return Ok(_uow._roleRepository.List());
         }
-        
-        [HttpGet( "{id:int}")]
+
+        [HttpGet("{id:int}")]
         public IActionResult FindRole(int id)
         {
             Role role = _uow._roleRepository.Find(id);
@@ -32,7 +32,7 @@ namespace IWE.Service.Controllers
             }
             return NotFound();
         }
-        
+
         [HttpPost]
         public IActionResult AddRole([FromBody] RoleDto model)
         {
@@ -45,7 +45,7 @@ namespace IWE.Service.Controllers
                 UpdatedAt = DateTime.Now,
                 WhoCreated = "iwe",
                 WhoUpdated = "iwe",
-                Note = "Add new role",
+                Note = "Added new role",
             });
             _uow.Save();
             return Ok(model);

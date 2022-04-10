@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj": {}
+    "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.DAL\\IWE.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj": {
+    "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.DAL\\IWE.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.DAL\\IWE.DAL.csproj",
         "projectName": "IWE.DAL",
-        "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj",
-        "packagesPath": "C:\\Users\\emirg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DAL\\obj\\",
+        "projectPath": "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.DAL\\IWE.DAL.csproj",
+        "packagesPath": "C:\\Users\\hasan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emirg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj": {
-                "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj"
+              "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.Entity\\IWE.Entity.csproj": {
+                "projectPath": "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.Entity\\IWE.Entity.csproj"
               }
             }
           }
@@ -48,6 +44,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.3, )"
@@ -74,32 +78,25 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj": {
+    "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.Entity\\IWE.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.Entity\\IWE.Entity.csproj",
         "projectName": "IWE.Entity",
-        "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\IWE.Entity.csproj",
-        "packagesPath": "C:\\Users\\emirg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Entity\\obj\\",
+        "projectPath": "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.Entity\\IWE.Entity.csproj",
+        "packagesPath": "C:\\Users\\hasan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hasan\\Desktop\\IWE\\IWE\\IWE.Entity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\emirg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -125,6 +122,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[10.4.0, )"
@@ -155,14 +160,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
