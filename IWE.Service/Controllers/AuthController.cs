@@ -13,12 +13,16 @@ namespace IWE.Service.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _configuration;
         private User _user;
+        private Department _department;
+        private Role _role;
 
-        public AuthController(IUnitOfWork unitOfWork, IConfiguration configuration, User user)
+        public AuthController(IUnitOfWork unitOfWork, IConfiguration configuration, User user,Department department, Role role)
         {
             _unitOfWork = unitOfWork;
             _configuration = configuration;
             _user = user;
+            _department = department;   
+            _role = role;
         }
         
         [HttpPost("login")]
@@ -42,11 +46,12 @@ namespace IWE.Service.Controllers
         [HttpPost("register")]
         public ActionResult Register(RegisterDto request)
         {
+                               
             _user.FirstName = request.FirstName;
             _user.LastName = request.LastName;
             _user.Email = request.Email;
-            _user.DepartmentId = 1;
-            _user.RoleId = 1;
+            _department.DepartmentName = request.Department.DepartmentName;
+            _role.RoleName = request.Role.RoleName;
             _unitOfWork._authRepository.Register(_user, request.Password);
             return Ok(_user);
         }

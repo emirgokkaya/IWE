@@ -8,12 +8,10 @@ namespace IWE.DTO.Concrete
 {
     public class TaskDto
     {
+        public int Id { get; set; }
         public string TaskName { get; set; }
         public string TaskDeveloper { get; set; }
-        public string TaskByTicket { get; set; }
-        public string TaskOwnedbyProject { get; set; }
-        public DateTime TaskCreationTime { get; set; }
-        public DateOnly TaskDeliveryDate { get; set; }
-        public bool TaskStatus { get; set; }
+        public string TaskFromTicket { get; set; }
+        public string TaskOwnedThisProject { get; set; }
     }
 }

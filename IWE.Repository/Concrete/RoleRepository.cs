@@ -17,6 +17,8 @@ public class RoleRepository : BaseRepository<Role>, IRoleRepository
         return Set().Select(x => new RoleDto
         {
             RoleName = x.RoleName
+            
+            
         }).ToList();
     }
 }

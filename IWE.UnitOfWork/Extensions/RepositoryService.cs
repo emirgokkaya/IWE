@@ -19,6 +19,7 @@ public static class RepositoryService
         services.AddScoped<ITaskRepository, TaskRepository>();
         services.AddScoped<IAuthRepository, AuthRepository>();
         services.AddScoped<IUnitOfWork, Concrete.UnitOfWork>();
+        
         services.AddScoped<User>();
         return services;
     }

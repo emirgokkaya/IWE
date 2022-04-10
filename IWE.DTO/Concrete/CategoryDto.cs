@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IWE.Entity.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,9 @@ namespace IWE.DTO.Concrete
 {
     public class CategoryDto
     {
+        public int Id { get; set; }
         public string CategoryName { get; set; }
+        public Project project { get; set; }
+
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace IWE.DTO.Concrete
 {
-    public  class Ticket
+    public  class TicketDto
     {
+        public int Id { get; set; }
         public string TicketName { get; set; }
         public string WhoSentTicket { get; set; }
         public string TicketForWhichProject { get; set; }
