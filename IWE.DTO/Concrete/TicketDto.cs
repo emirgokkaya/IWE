@@ -9,11 +9,6 @@ namespace IWE.DTO.Concrete
     public  class TicketDto
     {
         public int Id { get; set; }
-        public string TicketName { get; set; }
-        public string WhoSentTicket { get; set; }
-        public string TicketForWhichProject { get; set; }
-        public DateTime TicketCreationTime { get; set; }
-        public bool TicketStatus { get; set; }
-        public string TicketReply { get; set; }
+        public string TicketName { get; set; } = string.Empty;
     }
 }

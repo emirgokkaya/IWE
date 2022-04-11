@@ -9,11 +9,10 @@ namespace IWE.DTO.Concrete
     public class UserDto
     {
         public int Id { get; set; }
-        public string UserFullName { get; set; }
-        public string UserRole { get; set; }
-        public string UserDepartment { get; set; }
-        public string UserAdress { get; set; }
-        public string UserEmail { get; set; }
+        public string UserFullName { get; set; } = string.Empty;
+        public string UserRole { get; set; } = string.Empty;
+        public string UserDepartment { get; set; } = string.Empty;
+        public string UserEmail { get; set; } = string.Empty;
     }
 
 }

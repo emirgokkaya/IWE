@@ -6,5 +6,7 @@ namespace IWE.Repository.Abstract;
 
 public interface IProjectRepository : IBaseRepository<Project>
 {
-    List<ProjectDto> GetProjects(int id);
+    List<ProjectListDto> GetProjects();
+    List<ProjectListDto> GetProjectsOfUser(string authUser);
+    List<ProjectDetailDto> GetProjectDetail(int id);
 }

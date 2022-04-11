@@ -17,10 +17,6 @@ public class TaskRepository : BaseRepository<IWE.Entity.Concrete.Task>, ITaskRep
         {
             Id = x.Id,
             TaskName = x.TaskName,
-            TaskCreationTime =x.CreatedAt,
-            TaskStatus = x.Status,
-            
-
         }).ToList();
     }
 }

@@ -20,7 +20,29 @@ public class UserRepository : BaseRepository<User>, IUserRepository
             UserDepartment=x.Department.DepartmentName,
             UserFullName=x.FirstName + " " +x.LastName,
             UserRole =x.Role.RoleName,
-
+            UserEmail = x.Email,
         }).ToList();
+    }
+
+    public bool StatusChange(int id)
+    {
+        User ?user = Set().Find(id);
+        if (user != null)
+        {
+            user.Status = !user.Status;
+            return true;
+        }
+        return false;
+    }
+
+    public bool SoftDeleteUser(int id)
+    {
+        User? user = Set().Find(id);
+        if (user != null && user.Status != true)
+        {
+            user.IsDeleted = true;
+            return true;
+        }
+        return false;
     }
 }

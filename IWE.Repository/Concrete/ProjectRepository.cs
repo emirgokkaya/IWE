@@ -12,17 +12,53 @@ public class ProjectRepository : BaseRepository<Project>, IProjectRepository
     {
     }
 
-    public List<ProjectDto> GetProjects(int id)
+    public List<ProjectListDto> GetProjects()
     {
-        return Set().Select(x => new ProjectDto
+        return Set().Select(x => new ProjectListDto()
         {
+            Id = x.Id,
             ProjectName = x.ProjectName,
-            ProjectCompanyName =x.Users.Where(x => x.Id == id).FirstOrDefault(),
-            ProjectCategoryName = x.Users.Where(x => x.Id == id).FirstOrDefault(),
-            ProjectDeveloperName = x.Users.Where(x => x.Id == id).FirstOrDefault(),
-            ProjectOwnerName=x.Users.Where(x => x.Id == id).FirstOrDefault(),
-            
+            ProjectOwnerName = x.WhoCreated
+        }).ToList();
+    }
 
+    public List<ProjectListDto> GetProjectsOfUser(string authUser)
+    {
+        return Set().Where(x => x.WhoCreated == authUser).Select(p => new ProjectListDto
+        {
+            Id = p.Id,
+            ProjectName = p.ProjectName,
+            ProjectOwnerName = p.WhoCreated
+        }).ToList();
+    }
+
+    public List<ProjectDetailDto> GetProjectDetail(int id)
+    {
+        return Set().Select(x => new ProjectDetailDto
+        {
+            Id = x.Id,
+            ProjectName = x.ProjectName,
+            
+            CategoryList = x.Categories.Select(c => new CategoryDto
+            {
+                Id = c.Id,
+                CategoryName = c.CategoryName
+            }).ToList(),
+            
+            TaskList = x.Tasks.Select(t => new TaskDto
+            {
+                Id = t.Id,
+                TaskName = t.TaskName
+            }).ToList(),
+            
+            UserList = x.Users.Select(u => new UserDto
+            {
+                Id = u.Id,
+                UserDepartment = u.Department.DepartmentName,
+                UserEmail = u.Email,
+                UserRole = u.Role.RoleName,
+                UserFullName = u.FirstName + " " + u.LastName
+            }).ToList()
         }).ToList();
     }
 }

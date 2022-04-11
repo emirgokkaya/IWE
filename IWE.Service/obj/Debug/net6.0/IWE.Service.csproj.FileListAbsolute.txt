@@ -858,3 +858,5 @@ C:\Users\hasan\Desktop\IWE\IWE\IWE.Service\obj\Debug\net6.0\IWE.Service.genrunti
 C:\Users\hasan\Desktop\IWE\IWE\IWE.Service\obj\Debug\net6.0\ref\IWE.Service.dll
 C:\Users\hasan\Desktop\IWE\IWE\IWE.Service\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\hasan\Desktop\IWE\IWE\IWE.Service\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\emirg\Desktop\IWE\IWE.Service\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\emirg\Desktop\IWE\IWE.Service\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

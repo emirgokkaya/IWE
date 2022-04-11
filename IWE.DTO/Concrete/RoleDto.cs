@@ -11,6 +11,6 @@ namespace IWE.DTO.Concrete
     {
         
         public int Id { get; set; }
-        public string RoleName { get; set; }
+        public string RoleName { get; set; } = string.Empty;
     }
 }

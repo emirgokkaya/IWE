@@ -1,2 +1,17 @@
 /.vs/
 /.idea/
+/IWE.Core/obj/
+/IWE.Core/bin/
+/IWE.DAL/obj/
+/IWE.DAL/bin/
+/IWE.DTO/obj/
+/IWE.DTO/bin/
+/IWE.Entity/obj/
+/IWE.Entity/bin/
+/IWE.Repository/obj/
+/IWE.Repository/bin/
+/IWE.Service/obj/
+/IWE.Service/bin/
+/IWE.Services/
+/IWE.UnitOfWork/obj/
+/IWE.UnitOfWork/bin/
