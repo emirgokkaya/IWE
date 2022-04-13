@@ -3329,10 +3329,7 @@
         },
         "runtime": {
           "bin/placeholder/IWE.Core.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "IWE.DAL/1.0.0": {
         "type": "project",
@@ -3349,10 +3346,7 @@
         },
         "runtime": {
           "bin/placeholder/IWE.DAL.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "IWE.DTO/1.0.0": {
         "type": "project",
@@ -3369,10 +3363,7 @@
         },
         "runtime": {
           "bin/placeholder/IWE.DTO.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "IWE.Entity/1.0.0": {
         "type": "project",
@@ -3389,10 +3380,7 @@
         },
         "runtime": {
           "bin/placeholder/IWE.Entity.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "IWE.Repository/1.0.0": {
         "type": "project",
@@ -3411,10 +3399,7 @@
         },
         "runtime": {
           "bin/placeholder/IWE.Repository.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "IWE.UnitOfWork/1.0.0": {
         "type": "project",
@@ -3431,10 +3416,7 @@
         },
         "runtime": {
           "bin/placeholder/IWE.UnitOfWork.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -10319,25 +10301,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emirg\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Aksamci\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
       "projectName": "IWE.Service",
-      "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
-      "packagesPath": "C:\\Users\\emirg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.Service\\obj\\",
+      "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
+      "packagesPath": "C:\\Users\\Aksamci\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\emirg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aksamci\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10350,14 +10335,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj": {
-              "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj"
+            "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj": {
+              "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj"
             },
-            "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DTO\\IWE.DTO.csproj": {
-              "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.DTO\\IWE.DTO.csproj"
+            "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DTO\\IWE.DTO.csproj": {
+              "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DTO\\IWE.DTO.csproj"
             },
-            "C:\\Users\\emirg\\Desktop\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj": {
-              "projectPath": "C:\\Users\\emirg\\Desktop\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj"
+            "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj": {
+              "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj"
             }
           }
         }
@@ -10433,7 +10418,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

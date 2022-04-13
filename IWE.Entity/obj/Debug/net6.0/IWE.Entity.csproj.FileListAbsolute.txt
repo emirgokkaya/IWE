@@ -45,3 +45,12 @@ C:\Users\hasan\Desktop\IWE\IWE\IWE.Entity\obj\Debug\net6.0\refint\IWE.Entity.dll
 C:\Users\hasan\Desktop\IWE\IWE\IWE.Entity\obj\Debug\net6.0\IWE.Entity.pdb
 C:\Users\hasan\Desktop\IWE\IWE\IWE.Entity\obj\Debug\net6.0\IWE.Entity.genruntimeconfig.cache
 C:\Users\hasan\Desktop\IWE\IWE\IWE.Entity\obj\Debug\net6.0\ref\IWE.Entity.dll
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\bin\Debug\net6.0\IWE.Entity.deps.json
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\bin\Debug\net6.0\IWE.Entity.runtimeconfig.json
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\bin\Debug\net6.0\IWE.Entity.dll
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\bin\Debug\net6.0\IWE.Entity.pdb
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\obj\Debug\net6.0\IWE.Entity.dll
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\obj\Debug\net6.0\refint\IWE.Entity.dll
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\obj\Debug\net6.0\IWE.Entity.pdb
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\obj\Debug\net6.0\IWE.Entity.genruntimeconfig.cache
+C:\Users\Aksamci\Desktop\IWE\IWE.Entity\obj\Debug\net6.0\ref\IWE.Entity.dll

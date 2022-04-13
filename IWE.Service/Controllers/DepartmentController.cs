@@ -48,7 +48,7 @@ public class DepartmentController : Controller
             WhoUpdated = "iwe"
         });
         _unitOfWork.Save();
-        return Ok(model);
+        return Ok(model.DepartmentName);
     }
 
     [HttpPut]
