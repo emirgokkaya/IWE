@@ -21,8 +21,13 @@ public class DepartmentController : Controller
     {
         return Ok(_unitOfWork._departmentRepository.List());
     }
+    [HttpGet("ListDepartmentWithEmployees")]
+    public IActionResult ListDepartmentWithEmployees()
+    {
+        return Ok(_unitOfWork._departmentRepository.GetDepartmentWithEmployees());
+    }
 
-    [HttpGet("{id:int}")]
+    [HttpGet("FindDepartment/{id:int}")]
     public IActionResult FindDepartment(int id)
     {
         Department department = _unitOfWork._departmentRepository.Find(id);
@@ -33,7 +38,7 @@ public class DepartmentController : Controller
         return NotFound();
     }
 
-    [HttpPost]
+    [HttpPost("AddDepartment")]
     public IActionResult AddDepartment([FromBody] DepartmentDto model)
     {
         _unitOfWork._departmentRepository.Create(new Department
@@ -52,7 +57,7 @@ public class DepartmentController : Controller
     }
 
     [HttpPut]
-    [Route("{id:int}")]
+    [Route("UpdateDepartment/{id:int}")]
     public IActionResult UpdateDepartment(int id, [FromBody] DepartmentDto model)
     {
         Department department = _unitOfWork._departmentRepository.Find(id);
@@ -65,10 +70,24 @@ public class DepartmentController : Controller
         }
         return NotFound();
     }
+    [HttpPut]
+    [Route("DeleteDepartment/{id:int}")]
+    public IActionResult DeleteDepartment(int id)
+    {
+        Department department = _unitOfWork._departmentRepository.Find(id);
+        if (department != null)
+        {
+            department.IsDeleted= true ;
+            _unitOfWork._departmentRepository.Update(department);
+            _unitOfWork.Save();
+            return Ok(department);
+        }
+        return NotFound();
+    }
 
     [HttpDelete]
-    [Route("{id:int}")]
-    public IActionResult DeleteDepartment(int id)
+    [Route("HardDeleteDepartment/{id:int}")]
+    public IActionResult HardDeleteDepartment(int id)
     {
         Department department = _unitOfWork._departmentRepository.Find(id);
         if (department != null)

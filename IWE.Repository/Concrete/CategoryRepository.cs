@@ -12,12 +12,28 @@ public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
     {
     }
 
-    public IQueryable<CategoryDto> GetCategories(int id)
+    public List<CategoryDto> GetCategories()
     {
-        return Set().Select(x => new CategoryDto
+        return Set().Select(c => new CategoryDto
         {
-            Id = x.Id,
-           CategoryName = x.CategoryName,
-        }).Where(x => x.Id == id);
+            Id = c.Id,
+            CategoryName = c.CategoryName,
+        }).ToList();
+    }
+
+    public List<CategoryWithProjects> GetCategoryWithProjects(int id)
+    {
+        return Set().Select(c => new CategoryWithProjects
+        {
+
+            CategoryName = c.CategoryName,
+
+            Projects = c.Projects.Select(p => new ProjectListDto
+            {
+                  ProjectName = p.ProjectName,
+                  ProjectOwnerName = p.WhoCreated
+            }).ToList()
+
+        }).Where(x=> x.id == id).ToList();
     }
 }

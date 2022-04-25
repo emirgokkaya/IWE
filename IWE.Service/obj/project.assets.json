@@ -10301,28 +10301,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aksamci\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\murat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
+      "projectUniqueName": "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.Service\\IWE.Service.csproj",
       "projectName": "IWE.Service",
-      "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\IWE.Service.csproj",
-      "packagesPath": "C:\\Users\\Aksamci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.Service\\obj\\",
+      "projectPath": "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.Service\\IWE.Service.csproj",
+      "packagesPath": "C:\\Users\\murat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.Service\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Aksamci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\murat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10335,14 +10327,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj": {
-              "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DAL\\IWE.DAL.csproj"
+            "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.DAL\\IWE.DAL.csproj": {
+              "projectPath": "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.DAL\\IWE.DAL.csproj"
             },
-            "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DTO\\IWE.DTO.csproj": {
-              "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.DTO\\IWE.DTO.csproj"
+            "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.DTO\\IWE.DTO.csproj": {
+              "projectPath": "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.DTO\\IWE.DTO.csproj"
             },
-            "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj": {
-              "projectPath": "C:\\Users\\Aksamci\\Desktop\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj"
+            "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj": {
+              "projectPath": "C:\\Users\\murat\\Desktop\\MyProjects\\IWE\\IWE.UnitOfWork\\IWE.UnitOfWork.csproj"
             }
           }
         }

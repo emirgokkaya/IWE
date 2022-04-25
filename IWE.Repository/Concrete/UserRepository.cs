@@ -3,6 +3,7 @@ using IWE.DAL.Contexts;
 using IWE.DTO.Concrete;
 using IWE.Entity.Concrete;
 using IWE.Repository.Abstract;
+using System.Security.Claims;
 
 namespace IWE.Repository.Concrete;
 
@@ -45,4 +46,5 @@ public class UserRepository : BaseRepository<User>, IUserRepository
         }
         return false;
     }
+
 }

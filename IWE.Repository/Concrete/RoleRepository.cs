@@ -21,4 +21,18 @@ public class RoleRepository : BaseRepository<Role>, IRoleRepository
             
         }).ToList();
     }
+
+    public List<RoleWithEmployees> GetRoleWithEmployees()
+    {
+       return Set().Select(x=> new RoleWithEmployees
+       {
+           RoleName = x.RoleName,
+           Employees = x.Users.Select(u=> new UserDto
+           {
+               UserFullName = u.FirstName + " " + u.LastName,
+               UserEmail = u.Email,
+               
+           }).ToList()
+       }).ToList();
+    }
 }
