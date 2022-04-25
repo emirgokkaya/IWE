@@ -35,7 +35,7 @@ namespace IWE.Service.Controllers
             return Ok(users);
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("FindUser/{id:int}")]
         public IActionResult FindUser(int id)
         {
             User ?user = _unitOfWork._userRepository.Find(id);
@@ -47,14 +47,14 @@ namespace IWE.Service.Controllers
         }
 
         [HttpPut]
-        [Route("{id:int}")]
+        [Route("UpdateUser/{id:int}")]
         public IActionResult UpdateUser(int id)
         {
             return Ok(_unitOfWork._userRepository.StatusChange(id));
         }
 
         [HttpDelete]
-        [Route("{id:int}")]
+        [Route("DeleteUser{id:int}")]
         public IActionResult DeleteUser(int id)
         {
             return Ok(_unitOfWork._userRepository.SoftDeleteUser(id));

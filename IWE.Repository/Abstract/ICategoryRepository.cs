@@ -6,5 +6,6 @@ namespace IWE.Repository.Abstract;
 
 public interface ICategoryRepository : IBaseRepository<Category>
 {
-    IQueryable<CategoryDto> GetCategories(int id);
+    List<CategoryDto> GetCategories();
+    List<CategoryWithProjects> GetCategoryWithProjects(int id);
 }

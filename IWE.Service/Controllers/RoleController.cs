@@ -21,8 +21,13 @@ namespace IWE.Service.Controllers
         {
             return Ok(_uow._roleRepository.List());
         }
+        [HttpGet("RoleListWithEmployees")]
+        public IActionResult RoleListWithEmployees()
+        {
+            return Ok(_uow._roleRepository.GetRoleWithEmployees());
+        }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("FindRole/{id:int}")]
         public IActionResult FindRole(int id)
         {
             Role role = _uow._roleRepository.Find(id);
@@ -33,7 +38,7 @@ namespace IWE.Service.Controllers
             return NotFound();
         }
 
-        [HttpPost]
+        [HttpPost("AddRole")]
         public IActionResult AddRole([FromBody] RoleDto model)
         {
             _uow._roleRepository.Create(new Role
@@ -52,7 +57,7 @@ namespace IWE.Service.Controllers
         }
 
         [HttpPut()]
-        [Route("{id:int}")]
+        [Route("UpdateRole/{id:int}")]
         public IActionResult UpdateRole(int id, [FromBody] RoleDto model)
         {
             Role role = _uow._roleRepository.Find(id);
@@ -65,10 +70,24 @@ namespace IWE.Service.Controllers
             }
             return NotFound();
         }
+        [HttpPut()]
+        [Route("DeleteRole/{id:int}")]
+        public IActionResult DeleteRole(int id)
+        {
+            Role role = _uow._roleRepository.Find(id);
+            if (role != null)
+            {
+                role.IsDeleted = true; 
+                _uow._roleRepository.Update(role);
+                _uow.Save();
+                return Ok(role);
+            }
+            return NotFound();
+        }
 
         [HttpDelete]
-        [Route("{id:int}")]
-        public IActionResult DeleteRole(int id)
+        [Route("HardDeleteRole/{id:int}")]
+        public IActionResult HardDeleteRole(int id)
         {
             Role role = _uow._roleRepository.Find(id);
             if (role != null)

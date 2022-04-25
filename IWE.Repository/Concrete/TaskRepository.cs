@@ -16,7 +16,42 @@ public class TaskRepository : BaseRepository<IWE.Entity.Concrete.Task>, ITaskRep
         return Set().Select(x => new TaskDto
         {
             Id = x.Id,
+            ProjectName = x.Project.ProjectName,
+            TaskAssigned = x.User.FirstName + " " + x.User.LastName,
             TaskName = x.TaskName,
         }).ToList();
+    }
+
+    public List<TaskDto> GetTaskOfProject(int id)
+    {
+        return Set().Where(x=> x.ProjectId == id).Select(x => new TaskDto
+        {
+            Id = x.Id,
+            ProjectName = x.Project.ProjectName,
+            TaskAssigned = x.User.FirstName + " " + x.User.LastName,
+            TaskName = x.TaskName,
+        }).ToList();
+
+    }
+    public List<TaskDto> GetTaskOfUser(int id)
+    {
+        return Set().Where(x=> x.UserId == id).Select(x => new TaskDto
+        {
+            Id = x.Id,
+            ProjectName = x.Project.ProjectName,
+            TaskAssigned = x.User.FirstName + " " + x.User.LastName,
+            TaskName = x.TaskName,
+        }).ToList();
+
+    }public List<TaskDto> MyTask(int id)
+    {
+        return Set().Where(x=> x.UserId == id).Select(x => new TaskDto
+        {
+            Id = x.Id,
+            ProjectName = x.Project.ProjectName,
+            TaskAssigned = x.User.FirstName + " " + x.User.LastName,
+            TaskName = x.TaskName,
+        }).ToList();
+
     }
 }
