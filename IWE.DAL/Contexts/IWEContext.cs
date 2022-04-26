@@ -18,7 +18,7 @@ public class IWEContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Server=MURAT\SQLEXPRESS;Database=IWEDatabase;Trusted_Connection=True;");
+        optionsBuilder.UseSqlServer(@"Server=localhost;Database=IWEDatabase;Trusted_Connection=True;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
